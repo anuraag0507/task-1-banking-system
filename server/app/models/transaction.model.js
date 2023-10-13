@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const transactionSchema = mongoose.Schema({
 	time: { type: String },
 	day: { type: Number },
-	month: { type: Number },
+	month: { type: Number }, 
 	year: { type: Number },
 	hour: { type: Number },
 	minute: { type: Number },
