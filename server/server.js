@@ -9,7 +9,7 @@ app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(bodyParser.json(request)); 
+app.use(bodyParser.json()); 
 
 const dbConfig = require("./config/database.config.js");
 const mongoose = require("mongoose");
@@ -26,7 +26,7 @@ mongoose
 	})
 	.catch((err) => {
 		console.log(
-			"Could not connect to the database right now. Exiting now...",
+			"request, Could not connect to the database right now. Exiting now...",
 			err
 		);
 		process.exit();
