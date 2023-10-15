@@ -9,7 +9,7 @@ app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(bodyParser.json());
+app.use(bodyParser.json(request)); 
 
 const dbConfig = require("./config/database.config.js");
 const mongoose = require("mongoose");
