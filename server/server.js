@@ -26,7 +26,7 @@ mongoose
 	})
 	.catch((err) => {
 		console.log(
-			"request, Could not connect to the database right now. Exiting now...",
+			"Could not connect to the database right now. Exiting now...",
 			err
 		);
 		process.exit();
